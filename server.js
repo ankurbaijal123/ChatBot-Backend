@@ -8,7 +8,7 @@ const app = express();
 
 app.use(
   cors({
-    origin: 'https://chat-bot-frontend-blond.vercel.app/',
+    origin: 'https://chat-bot-frontend-blond.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
   })
