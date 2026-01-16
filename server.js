@@ -5,10 +5,8 @@ const cors = require('cors');
 const apiRouter = require('./routes/api')
 const app = express();
 app.use(cors({
-   origin: [
-      'http://localhost:8080',          // local frontend
-      'https://your-frontend-domain.app' // deployed frontend
-    ],
+   origin: 
+      'http://localhost:8080',      
     credentials: false,
 }));
 app.options('*', cors());
