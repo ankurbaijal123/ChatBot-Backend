@@ -9,7 +9,6 @@ app.use(cors({
       'http://localhost:8080',      
     credentials: false,
 }));
-app.options('*', cors());
 app.use(express.json());
 app.use("/", apiRouter)
 
