@@ -9,7 +9,7 @@ app.use(cors({
       'http://localhost:8080',          // local frontend
       'https://your-frontend-domain.app' // deployed frontend
     ],
-    credentials: true,
+    credentials: false,
 }));
 app.options('*', cors());
 app.use(express.json());
