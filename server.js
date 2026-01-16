@@ -10,7 +10,7 @@ app.use(cors({
       'https://your-frontend-domain.app' // deployed frontend
     ],
     credentials: true,
-});
+}));
 app.use(express.json());
 app.use("/", apiRouter)
 
